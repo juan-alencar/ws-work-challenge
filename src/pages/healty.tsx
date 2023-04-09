@@ -12,10 +12,10 @@ import {
   Section,
 } from "@/styles/Pages/healty";
 import { Button } from "@/styles/components/button";
-import { UilShoppingCart, UilDollarSign } from "@iconscout/react-unicons";
+import Cart from "../assets/Cart.svg";
+import Dollar from "../assets/Dollar.svg";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { useRef } from "react";
 import useWindowSize from "@/hooks/useWindowsSize";
 
 export default function Healty() {
@@ -67,7 +67,7 @@ export default function Healty() {
             quidem suscipit odio.
           </p>
           <Button>
-            <UilDollarSign /> BUY NOW
+            <Image src={Dollar} alt='' /> BUY NOW
           </Button>
         </div>
       </CardLg>
@@ -83,7 +83,7 @@ export default function Healty() {
               </h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <Button size={"sm"}>
-                <UilShoppingCart /> ADD TO CART
+                <Image src={Cart} alt='' /> ADD TO CART
               </Button>
             </div>
           </CardSm>
@@ -100,7 +100,7 @@ export default function Healty() {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <Button>
-              <UilDollarSign /> BUY NOW
+              <Image src={Dollar} alt='' /> BUY NOW
             </Button>
           </div>
         </CardMd>
@@ -115,7 +115,7 @@ export default function Healty() {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <Button>
-              <UilDollarSign /> BUY NOW
+              <Image src={Dollar} alt='' /> BUY NOW
             </Button>
           </div>
         </CardMd>
