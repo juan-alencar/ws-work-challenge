@@ -8,6 +8,7 @@ export const Button = styled("button", {
         padding: "0.25rem 1rem",
         img: {
           maxWidth: 16,
+          maxHeight: 16,
         },
       },
       md: {
@@ -35,7 +36,9 @@ export const Button = styled("button", {
   transition: "100ms",
 
   img: {
+    width: "100%",
     maxWidth: 24,
+    maxHeight: 24,
   },
 
   "&:hover": {

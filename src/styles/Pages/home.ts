@@ -55,6 +55,12 @@ export const Profile = styled("section", {
           padding: "0.25rem",
           backgroundColor: "$blue200",
           color: "$white",
+          transition: "100ms",
+
+          "&:hover": {
+            transition: "100ms",
+            backgroundColor: "$blue100",
+          },
         },
       },
     },
@@ -77,10 +83,10 @@ export const Section = styled("section", {
   gap: "1rem",
   h1: {
     fontSize: "$md",
-    color: "$blue300",
+    color: "$blue200",
   },
   p: {
-    color: "$gray600",
+    color: "$gray400",
     lineHeight: 1.4,
   },
 
