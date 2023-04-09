@@ -3,7 +3,11 @@ import { Button } from "@/styles/components/button";
 import Image from "next/image";
 import ProfileImage from "../assets/Profile.png";
 import Figma from "../assets/Figma.svg";
-import * as Icons from "@iconscout/react-unicons";
+import Linkedin from "../assets/Linkedin.svg";
+import Whatsapp from "../assets/Whatsapp.svg";
+import Github from "../assets/Github.svg";
+import Folder from "../assets/Folder.svg";
+import Internet from "../assets/Internet.svg";
 
 export default function Home() {
   return (
@@ -18,17 +22,17 @@ export default function Home() {
           <ul>
             <li>
               <a target='_blank' href='https://linkedin.com/in/juan-alencar'>
-                <Icons.UilLinkedin size={24} />
+                <Image src={Linkedin} alt='' />
               </a>
             </li>
             <li>
               <a target='_blank' href='https://github.com/juan-alencar'>
-                <Icons.UilGithub size={24} />
+                <Image src={Github} alt='' />
               </a>
             </li>
             <li>
               <a target='_blank' href='https://wa.me/5583996975963'>
-                <Icons.UilWhatsapp size={24} />
+                <Image src={Whatsapp} alt='' />
               </a>
             </li>
           </ul>
@@ -63,13 +67,13 @@ export default function Home() {
         <h1>Links Úteis</h1>
         <div>
           <Button size={"sm"}>
-            <Icons.UilFolder /> REPOSITÓRIO DO PROJETO
+            <Image src={Folder} alt='' /> REPOSITÓRIO DO PROJETO
           </Button>
           <Button size={"sm"}>
             <Image src={Figma} alt='figma' /> FIGMA
           </Button>
           <Button size={"sm"}>
-            <Icons.UilServerNetwork /> PRODUÇÃO
+            <Image src={Internet} alt='' /> PRODUÇÃO
           </Button>
         </div>
       </Section>

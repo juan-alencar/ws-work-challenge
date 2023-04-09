@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@iconscout/react-unicons": "^2.0.2",
     "@stitches/react": "^1.2.8",
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",

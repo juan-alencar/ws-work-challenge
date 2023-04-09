@@ -1,10 +1,17 @@
-import { config } from "@/styles";
 import { Container, List, Sidebar } from "@/styles/Pages/app";
 import { globalStyles } from "@/styles/global";
-import * as Icons from "@iconscout/react-unicons";
 import type { AppProps } from "next/app";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
+
+import Heart from "../assets/Heart.svg";
+import Food from "../assets/Food.svg";
+import HeartActive from "../assets/HeartActive.svg";
+import Home from "../assets/Home.svg";
+import HomeActive from "../assets/HomeActive.svg";
+import Pet from "../assets/Pet.svg";
+import Flower from "../assets/Pet.svg";
 
 globalStyles();
 
@@ -19,28 +26,33 @@ export default function App({ Component, pageProps }: AppProps) {
         <ul>
           <List active={router.pathname == "/" ? true : false}>
             <Link href='/'>
-              <Icons.UilHome /> Home
+              <Image src={router.pathname == "/" ? HomeActive : Home} alt='' />{" "}
+              Home
             </Link>
           </List>
           <p>Categories</p>
           <List active={router.pathname == "/healty" ? true : false}>
             <Link href='/healty'>
-              <Icons.UilHeart /> Health
+              <Image
+                src={router.pathname == "/healty" ? HeartActive : Heart}
+                alt=''
+              />{" "}
+              Health
             </Link>
           </List>
           <List disabled={true}>
             <Link href=''>
-              <Icons.UilPizzaSlice /> Food
+              <Image src={Food} alt='' /> Food
             </Link>
           </List>
           <List disabled={true}>
             <Link href=''>
-              <Icons.UilVolleyball /> Pet
+              <Image src={Pet} alt='' /> Pet
             </Link>
           </List>
           <List disabled={true}>
             <Link href=''>
-              <Icons.UilFlower />
+              <Image src={Flower} alt='' />
               Flowers
             </Link>
           </List>
