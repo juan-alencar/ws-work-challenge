@@ -6,6 +6,9 @@ export const Button = styled("button", {
       sm: {
         fontSize: "$sm",
         padding: "0.25rem 1rem",
+        img: {
+          maxWidth: 16,
+        },
       },
       md: {
         fontSize: "$md",
@@ -30,6 +33,10 @@ export const Button = styled("button", {
   borderRadius: 8,
   cursor: "pointer",
   transition: "100ms",
+
+  img: {
+    maxWidth: 24,
+  },
 
   "&:hover": {
     transition: "100ms",
