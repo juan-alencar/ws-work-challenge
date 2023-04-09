@@ -11,7 +11,7 @@ import HeartActive from "../assets/HeartActive.svg";
 import Home from "../assets/Home.svg";
 import HomeActive from "../assets/HomeActive.svg";
 import Pet from "../assets/Pet.svg";
-import Flower from "../assets/Pet.svg";
+import Flower from "../assets/Flower.svg";
 
 globalStyles();
 
