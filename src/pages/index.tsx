@@ -8,6 +8,7 @@ import Whatsapp from "../assets/Whatsapp.svg";
 import Github from "../assets/Github.svg";
 import Folder from "../assets/Folder.svg";
 import Internet from "../assets/Internet.svg";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -66,15 +67,31 @@ export default function Home() {
       <Section>
         <h1>Links Úteis</h1>
         <div>
-          <Button size={"sm"}>
-            <Image src={Folder} alt='' /> REPOSITÓRIO DO PROJETO
-          </Button>
-          <Button size={"sm"}>
-            <Image src={Figma} alt='figma' /> FIGMA
-          </Button>
-          <Button size={"sm"}>
-            <Image src={Internet} alt='' /> PRODUÇÃO
-          </Button>
+          <Link
+            href={"https://github.com/juan-alencar/ws-work-challenge"}
+            target='_blank'
+          >
+            <Button size={"sm"}>
+              <Image src={Folder} alt='' /> REPOSITÓRIO DO PROJETO
+            </Button>
+          </Link>
+
+          <Link
+            href={
+              "https://www.figma.com/file/rFaLx3XbJy6C6XSqkKnA0y/WSWORK-Challenge?node-id=0%3A1&t=m3U6TIYGDNSyQpyb-1"
+            }
+            target='_blank'
+          >
+            <Button size={"sm"}>
+              <Image src={Figma} alt='figma' /> FIGMA
+            </Button>
+          </Link>
+
+          <Link href={"https://ws-work-challenge.vercel.app/"} target='_blank'>
+            <Button size={"sm"}>
+              <Image src={Internet} alt='' /> PRODUÇÃO
+            </Button>
+          </Link>
         </div>
       </Section>
       <Section>
